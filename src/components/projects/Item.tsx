@@ -20,8 +20,8 @@ const Item = ({ id, image, name, titleLeft = true }: Props) => {
                 </Link>
             </div>
             <img
-                src={image}
-                alt='2gh'
+                src={`/projects/${image}`}
+                alt={name}
                 width={647}
                 className="md:w-70%"
             />

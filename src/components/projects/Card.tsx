@@ -16,7 +16,7 @@ const Card = ({ description, image, category, name, id }: Props) => {
             <div
                 className="cursor-pointer hover:scale-105 transition-transform duration-400 ease-in-out"
             >
-                <img src={image} alt={name} />
+                <img src={`/projects/${image}`} alt={name} />
                 <h3 className="text-[28px] font-semibold">{name}</h3>
                 <p className="text-base">{description}</p>
             </div>

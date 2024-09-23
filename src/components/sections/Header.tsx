@@ -1,7 +1,6 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Navbar = () => {
 
@@ -20,7 +19,7 @@ const Navbar = () => {
             <nav className="w-full shadow-lg items-center backdrop-blur-lg fixed top-0 z-20">
                 <div className="flex flex-wrap items-center justify-between p-2 md:px-[60px]">
                     <div className="flex justify-between gap-[80px] items-center">
-                        <Link href="#home">
+                        <Link href="/">
                             <img
                                 src="/logo.png"
                                 alt="ali creative"
@@ -51,7 +50,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <Link
-                                    href="#about"
+                                    href="/about"
                                     className="block text-xl"
                                     onClick={closeMenu}
                                 >

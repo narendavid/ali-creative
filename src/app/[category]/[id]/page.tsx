@@ -34,7 +34,7 @@ const page = ({ params }: Props) => {
                     <h1 className="text-6xl">{project?.name}</h1>
                     <p className="text-base">{project?.description}</p>
                 </div>
-                <img src={project?.image} alt={project?.name} />
+                <img src={`/projects/${project?.image}`} alt={project?.name} />
             </div>
         </div>
     )

@@ -12,8 +12,8 @@ const Projects = () => {
                 </span>
             </h3>
             {
-                categories.map(({ id, description, image, name }) => (
-                    <Item id={id} key={id} name={name} image={image} />
+                categories.map(({ id, description, image, name }, index) => (
+                    <Item id={id} key={id} name={name} image={image} titleLeft={index % 2 == 0} />
                 ))
             }
         </div>
